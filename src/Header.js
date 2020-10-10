@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import Subnav from "./Subnav"
 import { Link } from "react-router-dom";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
@@ -9,6 +10,8 @@ function Header() {
   const [cart, setCart] = useContext(CartContext);
   
   return (
+    <div className="header__wrapper">
+
     <nav className="header">
       <Link to="/">
         <img
@@ -54,7 +57,11 @@ function Header() {
           </div>
         </Link>
       </div>
+      
     </nav>
+      <Subnav />
+    </div>
+    
   );
 }
 

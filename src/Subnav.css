@@ -1,0 +1,122 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.subnav__main {
+    height: 39px;
+    color: white;
+    background-color: #232f3e;
+    display: flex;
+    position: static;
+    float: none;
+    -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    flex: 0 0 auto;
+}
+
+.subnav__left {
+    position: relative;
+    float: left;
+    width: auto;
+    margin-right: 1px;
+    display: grid;
+    height: 39px;
+    width: 239px;
+}
+
+.subnav__globalLocation {
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+    width: 209px;
+    
+}
+
+.subnav__globalLocation__icon {
+    padding-right: 4px;
+}
+
+.subnav__globalLocation__text {
+    display: grid;
+}
+
+.subnav__globalLocation__textTop {
+    font-size: 12px;
+    line-height: 14px;
+    height: 14px;
+    font-weight: 400;
+    margin-top: 4px;
+}
+
+.subnav__globalLocation__textBottom {
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.subnav__mid {
+    display: flex;
+    align-items: center;
+    overflow:hidden;
+    flex: none;
+    margin-right: auto;
+    flex: 1 1 auto;
+    height: 39px;
+}
+
+.subnav__mid__wrapper {
+    white-space: nowrap;
+}
+
+.subnav__mid__item {
+    margin: 5px 1px 6px 0;
+    padding: 7px 0px 8px 0px;
+    scroll-margin: 0;
+    font-size: 14px;
+    box-sizing: content-box;
+}
+.subnav__mid__item a {
+    padding: 2px 7px 2px 7px;
+    height: 12px;
+    text-decoration: none;
+    color: white
+}
+.subnav__mid__item a:hover {
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+.subnav__right {
+    float: right;
+    display: flex;
+    align-items: center;
+    width: 240px;
+    position: static;
+}
+
+.subnav__right__wrapper {
+    width: 240px;
+}
+
+.subnav__right__item {
+    margin: 5px 1px 6px 0;
+    padding: 7px 0px 8px 0px;
+    scroll-margin: 0;
+    font-size: 14px;
+    box-sizing: content-box;
+}
+.subnav__right__item a {
+    padding: 2px 7px 2px 7px;
+    text-decoration: none;
+    margin-left: 60px;
+    color: white;
+    font-weight: 700;
+}
+.subnav__right__item a:hover {
+    border: 1px solid white;
+    border-radius: 2px;
+    
+}

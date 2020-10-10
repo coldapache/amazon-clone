@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import Product from "./Product";
+import MiniSlider from "./MiniSlider";
 import SimpleImageSlider from "react-simple-image-slider";
 import { CartContext } from './CartContext';
 import "./Home.css";
@@ -74,6 +75,9 @@ function Home(props) {
           ))
         }
         
+      </div>
+      <div>
+        <MiniSlider />
       </div>
     </div>
   );

@@ -15,7 +15,7 @@
 .product__rating{
     display: flex;
     justify-content: flex-end;
-    margin-top: -40px;
+    margin-top: -18px;
 }
 .product > img {
     width: 100%;
@@ -25,7 +25,6 @@
 }
 
 .product__info {
-    height: 150px;
     margin-bottom: 15px;
 }
 

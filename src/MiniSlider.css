@@ -1,0 +1,94 @@
+* {
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    max-width: 1251px;
+    background-color: white;
+    width: 100%;
+    min-height: 222px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin: 0px;
+    padding: 15px 30px;
+    padding-right: 50px;
+    overflow: hidden;
+}
+
+.slider {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.slider:hover {
+    overflow-x: scroll;
+}
+
+.image:hover {
+    cursor: pointer;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.next {
+    right: 33px;
+    position: absolute;
+    background-color: #fff;
+    height: 100px;
+    line-height: 125px;
+    width: 45px;
+    text-align: center;
+    box-shadow: -1px 0px 0px 0px #88888859;
+    border-radius: 3px 3px 0px 3px;
+}
+
+.prev {
+    left: 33px;
+    position: absolute;
+    background-color: #fff;
+    height: 100px;
+    line-height: 125px;
+    width: 45px;
+    text-align: center;
+    box-shadow: 1px 0px 0px 0px #88888859;
+    border-radius: 0 3px 3px 0;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    height: 6px;
+    cursor: pointer;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: white;
+    height: 3px;
+    border-radius: 6px;
+    width: 0;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    margin: 0;
+    cursor: pointer;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #b0b0b0;
+    cursor: pointer;
+}
+
+ 
+::-webkit-scrollbar-thumb:hover {
+    border-radius: 10px;
+    background-color: #7b7b7b;
+    cursor: pointer;
+}

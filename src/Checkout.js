@@ -1,12 +1,22 @@
 import React, { useContext } from "react";
 import { CartContext } from "./CartContext";
 import "./Checkout.css";
+import CurrencyFormat from "react-currency-format";
 
 import RecentlyViewedProduct from "./RecentlyViewedProduct";
 
 function Checkout() {
   const [cart, setCart] = useContext(CartContext);
-  console.log(cart);
+  
+  let subtotal = 0
+  
+  for (var i = 0; i < cart.length; i++) {
+    parseFloat(subtotal += parseFloat(cart[i].price))
+  }
+  //sets the subtotal to the sum of the cart length
+  
+  
+
   return (
     <div id="checkout__main">
       <div className="checkout__mainLeft">
@@ -100,10 +110,21 @@ function Checkout() {
           <div className="checkout__proceedToCheckoutMain">
             <div className="checkout__proceedToCheckoutMain__inner">
               <div className="checkout__proceedToCheckoutMain__innerSubtotal">
-                <span className="fontsize_medium">Subtotal: </span>{" "}
-                <span className="fontsize_medium fontsize_medium_bold">
-                  $39.95
-                </span>
+                  <CurrencyFormat 
+                  renderText={(value) => (
+                    <>
+                    <div><span className="fontsize_medium">Items: {cart.length}</span></div>
+                    <span className="fontsize_medium">Subtotal: {value}</span>{" "}
+                    <span className="fontsize_medium fontsize_medium_bold"> </span>
+                    </>
+                  )}
+                    decimalScale={2}
+                    value={subtotal.toFixed(2)}
+                    displayType={"text"}
+                    thousandSeparator={true}
+                    prefix={"$"}
+                  />
+                
               </div>
               <div className="checkout__proceedToCheckoutMain__innerCheckbox">
                 <div className="checkout__orderContainsGift">
